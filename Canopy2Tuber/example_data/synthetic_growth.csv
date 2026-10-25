@@ -1,0 +1,9 @@
+Sample_ID,Date,N_Level (kg/ha),D,GDD_After_Max_LAI,APAR_Delta,Experiment
+synthetic_A,220,100,55575,0,25,1
+synthetic_A,350,100,55575,0,60,1
+synthetic_A,500,100,55575,50,85,1
+synthetic_A,700,100,55575,250,70,1
+synthetic_B,220,200,55575,0,25,1
+synthetic_B,350,200,55575,0,60,1
+synthetic_B,500,200,55575,50,85,1
+synthetic_B,700,200,55575,250,70,1

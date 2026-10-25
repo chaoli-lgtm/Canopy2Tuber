@@ -1,0 +1,72 @@
+{
+  "bands": [
+    450,
+    560,
+    650,
+    730,
+    840
+  ],
+  "normalization": {
+    "x_mean": [
+      0.0235204927,
+      0.0750055394,
+      0.03553875580000001,
+      0.27004231920000005,
+      0.36727080900000003
+    ],
+    "x_scale": [
+      0.006462288837551809,
+      0.03461333973902616,
+      0.019142889711440285,
+      0.04603033931183118,
+      0.05830118553477724
+    ],
+    "y_mean": 4.021651179999999,
+    "y_scale": 1.7309970012898948
+  },
+  "seeds": [
+    3407,
+    3408,
+    3409
+  ],
+  "deep_search": {
+    "transfer_learning_rates": [
+      8e-05,
+      0.0003
+    ],
+    "scratch_learning_rates": [
+      0.0003,
+      0.001
+    ],
+    "regimes": [
+      {
+        "name": "original_huber",
+        "loss": "huber",
+        "noise": 0.015,
+        "mask": 0.1,
+        "weight_decay": 0.01
+      },
+      {
+        "name": "clean_mse",
+        "loss": "mse",
+        "noise": 0.0,
+        "mask": 0.0,
+        "weight_decay": 0.001
+      },
+      {
+        "name": "mild_mse",
+        "loss": "mse",
+        "noise": 0.01,
+        "mask": 0.0,
+        "weight_decay": 0.001
+      }
+    ],
+    "max_epochs": 300,
+    "min_epochs": 50,
+    "patience": 50,
+    "batch_size": 16,
+    "gradient_clip": 0.5,
+    "optimizer": "AdamW",
+    "scheduler": "CosineAnnealingWarmRestarts T0=20 Tmult=2 eta_min=1e-6"
+  }
+}

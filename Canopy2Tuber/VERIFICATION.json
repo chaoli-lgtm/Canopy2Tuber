@@ -1,0 +1,24 @@
+{
+  "LAI_3407_Calibration_max_abs_error": 2.348327639012382e-07,
+  "LAI_3407_Evaluation_max_abs_error": 2.3471069354741303e-07,
+  "LAI_3408_Calibration_max_abs_error": 2.3739624044338825e-07,
+  "LAI_3408_Evaluation_max_abs_error": 2.3361206036298654e-07,
+  "LAI_3409_Calibration_max_abs_error": 2.368469234070858e-07,
+  "LAI_3409_Evaluation_max_abs_error": 2.1557617202461188e-07,
+  "historical_550_max_abs_error": 2.2737367544323206e-13,
+  "organ_mass_balance_max_abs_error": 2.2737367544323206e-13,
+  "external_75_max_abs_error": 2.2737367544323206e-13,
+  "nonfinite_rejected": true,
+  "reversed_time_rejected": true,
+  "command_line_examples": "passed",
+  "full_training_rerun": false,
+  "training_helpers_identical_to_verified_source": true,
+  "all_python_syntax": "passed",
+  "runtime": {
+    "python": "3.8.20",
+    "torch": "2.4.1+cpu",
+    "numpy": "1.24.3",
+    "pandas": "2.0.3"
+  },
+  "scope": "Private study inputs used only for internal numerical replay; no raw observations distributed. No new fitting or new accuracy claim."
+}
